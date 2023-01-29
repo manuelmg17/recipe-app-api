@@ -4,7 +4,7 @@ Serializers for the user API View.
 from django.contrib.auth import (
     get_user_model,
     authenticate,
-    )
+)
 from django.utils.translation import gettext as _
 from rest_framework import serializers
 
@@ -46,7 +46,7 @@ class AuthTokenSerializer(serializers.Serializer):
     )
 
     def validate(self, attrs):
-        """"Validate and authenticate the user."""
+        """Validate and authenticate the user."""
         email = attrs.get('email')
         password = attrs.get('password')
         user = authenticate(
