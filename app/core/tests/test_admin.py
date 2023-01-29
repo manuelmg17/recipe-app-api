@@ -25,7 +25,7 @@ class AdminSiteTests(TestCase):
             name='Test user'
         )
 
-    def test_users_list(self):
+    def test_users_lists(self):
         """Test that users are listed on page."""
         # Check Django documentation for more reverse URLs
         url = reverse('admin:core_user_changelist')

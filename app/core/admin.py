@@ -21,6 +21,7 @@ class UserAdmin(BaseUserAdmin):
     fieldsets = (
         # None is for the title
         (None, {'fields': ('email', 'password')}),
+         (_('Personal Info'), {'fields': ('name',)}),
         (
             _('Permissions'),
             {
