@@ -138,5 +138,5 @@ AUTH_USER_MODEL = 'core.User'
 
 # To enable the rest django framework to use drf-spectacular
 REST_FRAMEWORK = {
-    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema'
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
